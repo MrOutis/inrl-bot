@@ -2,7 +2,7 @@ const toBool = (x) => x == 'true'
 const { existsSync } = require('fs')
 if (existsSync('config.env')) require('dotenv').config({ path: './config.env' })
 module.exports = {
-    SESSION_ID: process.env.SESSION_ID || '', //your ssid to run bot
+    SESSION_ID: process.env.SESSION_ID || 'f455bVWnm3a2b5e27bf1d7c03b6dec4639d3', //your ssid to run bot
     MONGO_URL : process.env.MONGO_URL,//must be enter your mongo url;
     HEROKU: {
         API_KEY: process.env.HEROKU_API_KEY,
